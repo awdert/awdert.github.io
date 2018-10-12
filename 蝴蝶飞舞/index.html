@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;padding:0;
+	}
+	div{
+		display: inline-block;
+	}
+	ul{
+		display: inline-block;
+	}
+	li{
+		list-style: none;
+	}
+		#hua{
+			position: absolute;
+			bottom:0;
+			right:0;
+			width:1024px;
+			height:528px;
+			background: url(img/hua.png) no-repeat;
+		}
+		#dog{
+			position: absolute;
+			bottom:0;
+			left:100px;
+			width:1024px;
+			height:528px;
+			background: url(img/dog.jpg) no-repeat;
+			background-size: 35%;
+		}
+		#butterfly{
+			position: absolute;
+			left:300px;
+			top:150px;
+			width:65px;
+			height:90px;
+			box-sizing:border-box;
+			transform-style:preserve-3d;
+			transform: perspective(400px) rotateX(0deg) rotateY(45deg); 
+			animation: smove 30s cubic-bezier(0.0,0.0,1.0,1.0)  forwards;;
+		}
+		@keyframes smove{
+			0%{
+				left:300px;
+				top:150px;
+			}
+			15%{
+				left:400px;
+				top:200px;
+			}
+			30%{
+				left:500px;
+				top:250px;
+			}
+			45%{
+				left:600px;
+				top:300px;
+			}
+			60%{
+				left:700px;
+				top:350px;
+			}
+			75%{
+				left:800px;
+				top:400px;
+			}
+			100%{
+				left:930px;
+				top:490px;
+			}
+		}
+		#butterfly li{
+			position: absolute;
+			left:0;
+			top:0;
+			width:35px;
+			height:50px;
+		}
+		#butterfly li:first-child{
+			background:url(img/chibang1.png) no-repeat;
+			transform: translateX(20px) rotateY(0deg) rotateX(-20deg) ;
+			transform-origin: 100% 100%;
+			animation: mymove 1.5s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;;
+		}
+		@keyframes mymove{
+			0%{
+				transform: translateX(20px) rotateY(0deg) rotateX(-20deg) ;
+			}
+			35%{
+				transform: translateX(20px) rotateY(0deg) rotateX(-30deg) ;
+			}
+			70%{
+				transform: translateX(20px) rotateY(0deg) rotateX(-30deg) ;
+			}
+			100%{
+				transform: translateX(20px) rotateY(0deg) rotateX(-20deg) ;
+			}
+		}
+		#butterfly li:nth-child(2){
+			background:url(img/chibang1.png) no-repeat;
+			transform: translateX(20px) rotateY(0deg) rotateX(0deg) ;	
+			transform-origin: 100% 100%;	
+			animation: move 1.5s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;
+		}
+		@keyframes move{
+			0%{
+				transform: translateX(20px) rotateY(0deg) rotateX(0deg) ;
+			}
+			35%{
+				transform: translateX(20px) rotateY(0deg) rotateX(5deg) ;
+			}
+			70%{
+				transform: translateX(20px) rotateY(0deg) rotateX(5deg) ;
+			}
+			100%{
+				transform: translateX(20px) rotateY(0deg) rotateX(0deg) ;
+			}
+		}
+		#butterfly li:nth-child(3){
+			background:url(img/chibang2.png) no-repeat;
+			transform: translateX(6px) translateY(30px) rotateY(-20deg);		
+			transform-origin: 100% 100%;	
+			animation: move1 1.5s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;;
+		}
+		@keyframes move1{
+			0%{
+				transform: translateX(6px) translateY(30px) rotateY(-20deg);
+			}
+			35%{
+				transform: translateX(6px) translateY(30px) rotateY(-40deg);
+			}
+			70%{
+				transform: translateX(6px) translateY(30px) rotateY(-40deg);
+			}
+			100%{
+				transform: translateX(6px) translateY(30px) rotateY(-20deg);
+			}
+		}
+		#butterfly li:nth-child(4){
+			background:url(img/chibang2.png) no-repeat;
+			transform: translateX(6px) translateY(30px) rotateY(0deg) rotateX(0deg) ;		
+			transform-origin: 100% 100%;	
+			animation: move2 1.5s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;;
+		}
+		@keyframes move2{
+			0%{
+				transform: translateX(6px) translateY(30px) rotateY(0deg);
+			}
+			35%{
+				transform: translateX(6px) translateY(30px) rotateY(10deg);
+			}
+			70%{
+				transform: translateX(6px) translateY(30px) rotateY(10deg);
+			}
+			100%{
+				transform: translateX(6px) translateY(30px) rotateY(0deg);
+			}
+		}
+		#butterfly li:last-child{
+			width:125px;
+			height:87px;
+			background:url(img/chibang-3.png) no-repeat;
+			background-size:100% 100%; 
+			transform: translateX(-13px) translateY(-48px) translateY(27px) rotateY(25deg) rotateX(0deg) ;;		
+		}
+		.butterflyb{
+			position: absolute;
+			left:900px;
+			top:20px;
+			width:90px;
+			height:65px;
+			box-sizing:border-box;
+			transform-style:preserve-3d;
+			transform: perspective(400px) rotateX(0deg) rotateY(45deg); 		
+		}
+		.butterflyb li{
+			position: absolute;
+			left:0;
+			top:0;
+			width:34px;
+			height:51px;
+		}
+		.butterflyb li:first-child{
+			background:url(img/landie1.png) no-repeat;
+			transform: translateX(20px) rotateY(0deg) rotateX(-20deg) ;
+			transform-origin: 100% 100%;
+			animation: landie1 1.5s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;
+		}
+		@keyframes landie1{
+			0%{
+			transform: translateX(20px) rotateY(0deg) rotateX(-20deg) ;
+			}
+			35%{
+			transform: translateX(20px) rotateY(10deg) rotateX(-20deg) ;	
+			}
+			70%{
+			transform: translateX(20px) rotateY(10deg) rotateX(-20deg) ;	
+			}
+			100%{
+			transform: translateX(20px) rotateY(0deg) rotateX(-20deg) ;	
+			}
+		}
+		.butterflyb li:nth-child(2){
+			width:51px;
+			height:35px;
+			background:url(img/landie2.png) no-repeat;
+			transform: translateX(20px) translateY(-18px) rotateY(0deg) rotateX(0deg) rotateZ(-50deg);	
+			transform-origin: 100% 100%;	
+			animation: landie2 1.5s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;
+		}
+		@keyframes landie2{
+			0%{
+			transform: translateX(20px) translateY(-18px) rotateY(0deg) rotateX(0deg) rotateZ(-50deg);	
+			}
+			35%{
+			transform: translateX(20px) translateY(-18px) rotateY(-20deg) rotateX(0deg) rotateZ(-50deg);	
+			}
+			70%{
+			transform: translateX(20px) translateY(-18px) rotateY(-20deg) rotateX(0deg) rotateZ(-50deg);	
+			}
+			100%{
+			transform: translateX(20px) translateY(-18px) rotateY(0deg) rotateX(0deg) rotateZ(-50deg);	
+			}
+		}
+		.butterflyb li:last-child{
+			background:url(img/landie3.png) no-repeat;
+			background-size:100% 100%; 
+			transform: translateX(49px) translateY(9px) rotateY(25deg) rotateX(0deg) rotateZ(-80deg);
+		}
+		@keyframes landiea{
+			0%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			22.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+		}
+		@keyframes landieb{
+			0%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			22.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			100%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+		}
+		@keyframes landiec{
+			0%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			22.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			85%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+		}
+		@keyframes landied{
+			0%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			22.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			72.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+		}	
+		@keyframes landiee{
+			0%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			22.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			60%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+		}
+		@keyframes landief{
+			0%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			22.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			47.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+		}	
+		@keyframes landieg{
+			0%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			22.5%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			35%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+		}	
+		@keyframes landieh{
+			0%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+			22.5%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			35%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			47.5%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);
+			}
+			60%{
+				left:1670px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			72.5%{
+				left:1420px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			85%{
+				left:1150px;
+				top:320px;
+				transform: perspective(400px) rotateX(0deg) rotateY(45deg);
+			}
+			100%{
+				left:900px;
+				top:320px;
+				transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg)
+			}
+		}	
+	</style>
+</head>
+<body>
+	<div id="dog"></div>
+	<div id="hua"></div>
+	<ul id="butterfly">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:900px;top:320px;transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);animation: landiea 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:1150px;top:320px;transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);animation: landieb 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:1420px;top:320px;transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);animation: landiec 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:1670px;top:320px;transform: perspective(400px) translateY(-60px) translateZ(-200px) rotateX(0deg) rotateY(45deg);animation: landied 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:900px;top:320px;animation: landiee 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:1150px;top:320px;animation: landief 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:1420px;top:320px;animation: landieg 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul class="butterflyb" style="left:1670px;top:320px;animation: landieh 15s cubic-bezier(0.0,0.0,1.0,1.0) infinite forwards;">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
