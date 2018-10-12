@@ -1,0 +1,350 @@
+@charset "UTF-8";
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 14px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #666;
+  overflow: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.18666667rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 0.24rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-container {
+  width: 100%;
+  height: 2.2rem;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 2.2rem;
+}
+.swiper-slide:first-child img {
+  width: 100%;
+  height: 2.73333333rem;
+}
+.bannerfl {
+  width: 100%;
+  height: 1.42213333rem;
+}
+.bannerfl li {
+  width: 33.3%;
+  height: 1.42213333rem;
+  float: left;
+}
+.bannerfl li img {
+  width: 100%;
+  height: 1.42213333rem;
+}
+.liebiao {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 2.304rem;
+  background: url(../img/bg.dpg) no-repeat;
+  background-size: 100%;
+}
+.liebiao li {
+  float: left;
+  width: 20%;
+  height: 50%;
+  text-align: center;
+}
+.liebiao li img {
+  margin-top: 0.13333333rem;
+  width: 0.5688rem;
+  height: 0.5688rem;
+}
+.liebiao li p {
+  font-family: -apple-system, Helvetica, sans-serif;
+  font-size: 0.16rem;
+}
+.jdkb {
+  position: relative;
+  width: 100%;
+  height: 0.4264rem;
+  background: #fff;
+}
+.jdkb img {
+  margin: 0.08rem 0.10666667rem;
+  width: 1.03813333rem;
+  height: 0.22746667rem;
+}
+.jdkb marquee {
+  display: inline-block;
+  width: 3.06666667rem;
+  height: 100%;
+}
+.jdkb marquee p a {
+  margin-left:-3.7rem;
+  color: #f23030;
+  font-size: 0.21333333rem;
+}
+.jdkb marquee p span {
+  font-size: 0.16rem;
+  margin-left:0.08rem;
+}
+.jdkb .zz {
+  position: absolute;
+  bottom: 0.06666667rem;
+  right: 0.13333333rem;
+  display: inline-block;
+  width: 0.43213333rem;
+  height: 0.24rem;
+  color: #181818;
+  font-size: 0.16rem;
+  font-weight: 400;
+}
+.mrcj {
+  width: 100%;
+  height: 1.7064rem;
+}
+.mrcj li {
+  float: left;
+}
+.mrcj li img {
+  width: 100%;
+  height: 1.7064rem;
+}
+.mrcj li:first-child {
+  width: 50%;
+  height: 1.7064rem;
+}
+.mrcj li:nth-child(2) {
+  width: 25%;
+  height: 1.7064rem;
+}
+.mrcj li:last-child {
+  width: 25%;
+  height: 1.7064rem;
+}
+.jdms {
+  position: relative;
+  width: 100%;
+  height: 0.4836rem;
+  background: #fff;
+}
+.jdms p {
+  display: inline-block;
+}
+.jdms p {
+  width: 25%;
+  height: 0.4836rem;
+  line-height: 0.4rem;
+}
+.jdms p:first-child {
+  font-size: 0.22666667rem;
+  color: #f02b2b;
+  font-weight: 700;
+}
+.jdms p:nth-child(2) {
+  font-size: 0.16rem;
+  color: #232326;
+  font-weight: 700;
+}
+.jdms p:nth-child(3) {
+  position: absolute;
+  right: 0.26666667rem;
+  width: 20%;
+  font-size: 0.16rem;
+  text-align: right;
+  color: #f23030;
+}
+.jdms .jiantou {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5%;
+  height: 0.4836rem;
+  text-align: center;
+  line-height: 0.42666667rem;
+}
+#jbsmbzz {
+  width: 100%;
+  height: 1.70666667rem;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.jdmsmb {
+  position: relative;
+  width: 12.16706667rem;
+  height: 1.70666667rem;
+  overflow: hidden;
+  transform: translateX(0.02666667rem);
+  background: #fff;
+}
+.jdmsmb li {
+  float: left;
+  margin-left: 0.13333333rem;
+  width: 1.0048rem;
+  height: 1.70666667rem;
+  text-align: center;
+}
+.jdmsmb li img {
+  width: 1.0048rem;
+  height: 65%;
+}
+.jdmsmb li p {
+  color: #f23030;
+  font-size: 0.21333333rem;
+  font-weight: 700;
+}
+.jdmsmb li s {
+  color: #686868;
+  font-size: 0.16rem;
+}
+.last {
+  position: absolute;
+  top: 0.06666667rem;
+  right: 0.26666667rem;
+  width: 0.16rem;
+  height: 80%;
+  background: #EEEEEE;
+}
+.search {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0.6rem;
+  z-index: 2;
+}
+.search li {
+  float: left;
+}
+.search li:first-child {
+  width: 12.5%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.66666667rem;
+}
+.search li:nth-child(2) {
+  width: 75%;
+  height: 100%;
+}
+.search li:nth-child(2) .zzz {
+  position: relative;
+  margin-top: 0.10666667rem;
+  width: 100%;
+  height: 70%;
+  border-radius: 0.26666667rem;
+  background: #fff;
+}
+.search li:nth-child(2) .zzz .aaa {
+  position: absolute;
+  top: 0.13333333rem;
+  left: 0.13333333rem;
+}
+.search li:nth-child(2) .zzz .aab {
+  position: absolute;
+  top: 0.06666667rem;
+  left: 0.44rem;
+  color: #9E9E9E;
+}
+.search li:nth-child(2) .zzz input {
+  position: absolute;
+  right: 0.21333333rem;
+  width: 70%;
+  height: 100%;
+  font-size: 0.14666667rem;
+  border: 0;
+  outline: none;
+}
+.search li:nth-child(2) .zzz .bba {
+  position: absolute;
+  top: 0.10666667rem;
+  left: 0.53333333rem;
+}
+.search li:nth-child(3) {
+  width: 12.5%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.66666667rem;
+  color: #fff;
+}
+.paiban {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.70666667rem;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 0 0.09333333rem 0;
+}
+.paiban li {
+  display: flex;
+  float: left;
+  width: 25%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.bannerzq {
+  width: 100%;
+  height: 1.63546667rem;
+  background: #fff;
+}
+.bannerzq img {
+  width: 100%;
+  height: 1.63546667rem;
+}
+.bannerzq1 {
+  width: 100%;
+  height: 1.7064rem;
+}
+.bannerzq1 li {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+.bannerzq1 li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.02666667rem;
+}
+.kongbai{
+  width:100%;
+  height:0.70666667rem;
+}

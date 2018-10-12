@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="dist/css/swiper.css">
+	<script>
+		var pixelRatio = 1 / window.devicePixelRatio;   
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+		var html=document.getElementsByTagName('html')[0];
+		var pageWidth=html.getBoundingClientRect().width;
+		html.style.fontSize=(pageWidth/10)*2+"px";           
+	</script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src='dist/vue.js'></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+  	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	    	<div class="swiper-slide" v-for='item in items'>
+	    		<img v-bind:src='item.img'>
+	    	</div>
+	    </div>
+    <div class="swiper-pagination"></div>
+  	</div>
+  	<ul class="bannerfl">
+  		<li v-for='item of items'>
+  			<img :src="item.img">
+  		</li>
+  	</ul>
+  	<ul class="liebiao">
+		<li v-for="item in items">
+			<img :src='item.img'>
+		</li>
+  	</ul>
+  	<div class="jdkb">
+  		<img src="img/jdkb.dpg" alt="">
+  		<marquee behavior="alterbate" direction="up">
+			<pre name="code" class="html">
+				<p v-for='item in items'>
+					<a href="">{{item.x}}</a><span>{{item.y}}</span>
+				</p>
+			</pre>
+  		</marquee>
+  		<div class="zz">更多</div>
+  	</div>
+  	<ul class="mrcj">
+  		<li v-for='item in items'>
+  			<img :src="item.img">
+  		</li>
+  	</ul>
+  	<div class="jdms">
+  		<p v-for="item in items">{{item.x}}</p>
+  		<div class="jiantou"><img src="img/biaoshi1.png" alt=""></div>
+  	</div>
+  	<div id="jbsmbzz">
+  		<ul class="jdmsmb">
+  			<li v-for='item of items'>
+  				<img :src="item.img">
+  				<p>{{item.x}}</p>
+  				<s>{{item.y}}</s>
+  			</li>
+  		</ul>
+  	</div>
+  	<ul class="search" id='div1'>
+  		<li><img src="img/xuxian.png" alt=""></li>
+  		<li>
+  			<div class="zzz">
+  				<img src="img/jdtb.png" alt="" class="aaa">
+  				<span class="aab">|</span>
+  				<img src="img/sousuotb.png" alt="" class="bba">
+  				<input type="text" placeholder="老有好货 爆款满199减100">
+  			</div>
+  		</li>
+  		<li>登录</li>
+  	</ul>
+  	<ul class="paiban">
+  		<li v-for='item in items'>
+  			<img :src="item.img">
+  		</li>
+  	</ul>
+  	<div class="bannerzq"><img src="img/zqbanner1.dpg" alt=""></div>
+  	<ul class="bannerzq1">
+  		<li v-for='item in items'>
+  			<img :src="item.img" alt="">
+  		</li>
+  	</ul>
+  	<div class="kongbai"></div>
+  	<script src="dist/js/swiper.min.js"></script>
+  	<script src='js/vue.js'></script>
+  	<script src='js/style.js'></script>
+</body>
+</html>
