@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+#header {
+  width: 100%;
+  height: 3.52rem;
+  background: #fcfcfc; }
+
+#header .book {
+  position: relative;
+  width: 100%;
+  height: 1.7066666667rem;
+  text-align: center; }
+
+#header .book p {
+  line-height: 1.7066666667rem;
+  font-size: 0.4666666667rem;
+  color: #2d2d2d;
+  font-weight: 600; }
+
+#header .book img {
+  position: absolute;
+  right: 0.84rem;
+  top: 0.6666666667rem;
+  width: 0.4533333333rem;
+  height: 0.48rem; }
+
+#header .table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 1.8133333333rem; }
+
+#header .table li {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 1.7066666667rem;
+  height: 1.3333333333rem; }
+
+#header .table p {
+  font-size: 0.4266666667rem;
+  color: #6b6b6b;
+  font-weight: 600; }
+
+#header .table .sbox {
+  display: none;
+  width: 0.8533333333rem;
+  height: 0.1333333333rem;
+  background: #fbd254; }
+
+#containner {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 10.7866666667rem;
+  background: url(../../img/background1.png) no-repeat;
+  background-size: 100%; }
+
+#containner .font {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 3.3333333333rem; }
+
+#containner .font .one {
+  font-size: 0.4666666667rem;
+  color: #656565; }
+
+#containner .font .two {
+  font-size: 0.4266666667rem;
+  color: #959595; }
+
+#containner .font a {
+  width: 5.2rem;
+  height: 1.1466666667rem;
+  text-align: center;
+  line-height: 1.1466666667rem;
+  border-radius: 0.1333333333rem;
+  background: #ffcd54;
+  font-size: 0.4666666667rem;
+  color: #343919; }
+
+.stand {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 1.9466666667rem; }
+
+.stand .aa {
+  width: 1.6rem;
+  height: 0.0133333333rem;
+  background: #e3e3e3; }
+
+.stand p {
+  font-size: 0.4266666667rem;
+  color: #646464; }
+
+/*# sourceMappingURL=book.css.map */
