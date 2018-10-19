@@ -1,0 +1,115 @@
+@charset "utf-8";
+$rem:75;
+
+*{
+	margin: 0;padding: 0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+#header{
+	width:100%;
+	height:264/$rem*1rem;
+	background:#fcfcfc;
+}
+#header .book{
+	position:relative;
+	width:100%;
+	height:128/$rem*1rem;
+	text-align:center;
+}
+#header .book p{
+	line-height:128/$rem*1rem;
+	font-size:35/$rem*1rem;
+	color:#2d2d2d;
+	font-weight:600;
+}
+#header .book img{
+	position: absolute;
+	right:63/$rem*1rem;
+	top:50/$rem*1rem;
+	width:34/$rem*1rem;
+	height:36/$rem*1rem;
+}
+#header .table{
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-flow:row wrap;
+	width:100%;
+	height:136/$rem*1rem;
+}
+#header .table li{
+	display:inline-flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-flow:column wrap;
+	width:128/$rem*1rem;
+	height:100/$rem*1rem;
+}
+#header .table p{
+	font-size:32/$rem*1rem;
+	color:#6b6b6b;
+	font-weight:600;
+}
+#header .table .sbox{
+	display:none;
+	width:64/$rem*1rem;;
+	height:10/$rem*1rem;
+	background:#fbd254;
+}
+#containner{
+	display:flex;
+	justify-content: flex-end;
+	flex-flow:column wrap;
+	width:100%;
+	height:809/$rem*1rem;
+	background:url(../../img/background1.png) no-repeat;
+	background-size:100%;
+}
+#containner .font{
+	display:inline-flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-flow:column wrap;
+	width:100%;
+	height:250/$rem*1rem;
+}
+#containner .font .one{
+	font-size:35/$rem*1rem;
+	color:#656565;
+} 
+#containner .font .two{
+	font-size:32/$rem*1rem;
+	color:#959595;
+} 
+#containner .font a{
+	width:390/$rem*1rem;
+	height:86/$rem*1rem;
+	text-align:center;
+	line-height:86/$rem*1rem;
+	border-radius:10/$rem*1rem;
+	background:#ffcd54;
+	font-size:35/$rem*1rem;
+	color:#343919;
+}
+.stand{
+	display:inline-flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-flow:row wrap;
+	width:100%;
+	height:146/$rem*1rem;
+}
+.stand .aa{
+	width:120/$rem*1rem;
+	height:1/$rem*1rem;
+	background:#e3e3e3;
+}
+.stand p{
+	font-size:32/$rem*1rem;
+	color:#646464;	
+}

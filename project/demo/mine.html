@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/mine/mine.css">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<script>
+		var pixelRatio = 1 / window.devicePixelRatio;   
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+		var html=document.getElementsByTagName('html')[0];
+		var pageWidth=html.getBoundingClientRect().width;
+		html.style.fontSize=pageWidth/10+"px";  
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="boxtitle">
+			<div class="sbox">
+				<img src="../img/system.png" alt="">
+				<img src="../img/news.png" alt="">
+			</div>
+		</div>
+		<div class="boxbanner">
+			<div class="boxbanners">
+				<img src="../img/header.png" alt="">
+				<div class="font">
+					<p class="denglu">未登录</p>
+					<p class="news">个人信息</p>
+					<img src="../img/other.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column"></div>
+	<div id="function">
+		<ur class="tab">
+			<li>
+				<img src="../img/get.png" alt="">
+				<p class="tabf">我的收藏</p>
+			</li>
+			<li>
+				<img src="../img/footer.png" alt="">
+				<p class="tabf">我的足迹</p>
+			</li>
+			<li>
+				<img src="../img/talk.png" alt="">
+				<p class="tabf">我的评价</p>
+			</li>
+			<li>
+				<img src="../img/remember.png" alt="">
+				<p class="tabf">答谢记录</p>
+			</li>
+			<li>
+				<img src="../img/location.png" alt="">
+				<p class="tabf">我的地址</p>
+			</li>
+		</ur>
+	</div>
+	<div class="column"></div>
+	<div id="feature">
+		<div class="font">
+			<p>我的资产</p>
+		</div>
+		<div class="func">
+			<ul class="funcf">
+				<li>
+					<img src="../img/gift.png" alt="">
+					<p class="big">红包</p>
+					<p class="small">0个未使用</p>
+				</li>
+				<li>
+					<img src="../img/present.png" alt="">
+					<p class="big">代金券</p>
+					<p class="small">4个未使用</p>
+				</li>
+				<li>
+					<img src="../img/wallet.png" alt="">
+					<p class="big">我的钱包</p>
+					<p class="small">签到赢现金</p>
+				</li>
+				<li>
+					<img src="../img/give.png" alt="">
+					<p class="big">闪付</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clone"></div>
+	<ul id="footer">
+		<li  class='oLi'>
+			<img src="../img/index2.png" alt="" class='sy'>
+			<p>首页</p>
+		</li>
+		<li class='oLi'>
+			<img src="../img/book.png" alt="" class='dd'>
+			<p>订单</p>
+		</li>
+		<li class='oLi'>
+			<img src="../img/mine.png" alt="" class='wd'>
+			<p>我的</p>
+		</li>
+	</ul>
+	<script src="../js/pubilic.js"></script>	
+</body>
+</html>

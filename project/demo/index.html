@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/public/public.css">
+	<link rel="stylesheet" href='../css/index/index.css'>
+	<link rel="stylesheet" href="../css/swiper/swiper.min.css">
+	<script>
+		var pixelRatio = 1 / window.devicePixelRatio;   
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+		var html=document.getElementsByTagName('html')[0];
+		var pageWidth=html.getBoundingClientRect().width;
+		html.style.fontSize=pageWidth/10+"px";  
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="nav"></div>
+		<div class="title">
+			<div class="stitle">
+				<img src="../img/locate.png" alt="">
+				<span class='jinniu'>金牛万达广场A</span>
+				<img src="../img/more.png" alt="">
+				<div class="search">
+					<img src="../img/search.png" alt="">
+					<input type="text" placeholder="输入商家商品名称">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
+		      <div class="swiper-slide"><img src="../img/bannera.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="../img/bannerb.png" alt=""></div>
+		    </div>
+		</div>
+	</div>
+	<div class="grey"></div>
+	<ul id="table">
+		<li>
+			<img src="../img/delicious.png" alt="">
+			<p class='文字'>美食</p>
+		</li>
+		<li>
+			<img src="../img/tea.png" alt="">
+			<p class='文字'>下午茶</p>
+		</li>
+		<li>
+			<img src="../img/cake.png" alt="">
+			<p class='文字'>蛋糕</p>
+		</li>
+		<li>
+			<img src="../img/pizza.png" alt="">
+			<p class='文字'>披萨</p>
+		</li>
+		<li>
+			<img src="../img/mianguan.png" alt="">
+			<p class='文字'>米粉面馆</p>
+		</li>
+		<li>
+			<img src="../img/vegtable.png" alt="">
+			<p class='文字'>果蔬生鲜</p>
+		</li>
+		<li>
+			<img src="../img/huoguo.png" alt="">
+			<p class='文字'>热辣火锅</p>
+		</li>
+		<li>
+			<img src="../img/kindsof.png" alt="">
+			<p class='文字'>全部分类</p>
+		</li>
+	</ul>
+	<div class="zhanshi">
+		<img src="../img/banner1.png" alt="">
+		<img src="../img/banner2.png" alt="">
+		<img src="../img/banner3.png" alt="">
+	</div>
+	<div class="sbiao">
+		<div class="one">
+			<img src="../img/house.png" alt="">
+			<p class='house'>附近商家</p>
+		</div>
+		<div class="another">
+			<p class='later'>更多</p>
+			<img src="../img/later.png" alt="">
+		</div>
+	</div>
+	<div class="clone"></div>
+	<ul id="footer">
+		<li  class='oLi'>
+			<img src="../img/index2.png" alt="" class='sy'>
+			<p>首页</p>
+		</li>
+		<li class='oLi'>
+			<img src="../img/book.png" alt="" class='dd'>
+			<p>订单</p>
+		</li>
+		<li class='oLi'>
+			<img src="../img/mine.png" alt="" class='wd'>
+			<p>我的</p>
+		</li>
+	</ul>
+	<script src="../js/pubilic.js"></script>
+	<script src='../js/swiper.min.js'></script>
+	<script>
+		 var swiper = new Swiper('.swiper-container', {
+	      spaceBetween: 30,
+	      centeredSlides: true,
+	      autoplay: {
+	        delay: 2500,
+	        disableOnInteraction: false,
+	      },
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	</script>
+</body>
+</html>

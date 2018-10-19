@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>加载</title>
+<style>
+	body{
+		background:#fecf45;
+	}
+	#loading {
+		position:absolute;
+		top:25%;
+		left:45%;
+		height:100px;
+		width:100px;
+		border-radius:50px;
+		margin-top:150px;
+		color:white;
+		text-align:center;
+		line-height:100px;
+		box-shadow:-25px -25px 1px rgba(40,200,255,0.6),-35px 0px 1px rgba(255,120,100,0.6),-25px 25px 1px rgba(255,80,150,0.6),0px 35px 1px rgba(150,80,139,0.6),25px 25px 1px rgba(156,110,245,0.6),25px -25px 1px rgba(93,124,228,0.6),0px -35px 1px rgba(112,130,255,0.6),35px 0px 1px rgba(141,109,200,0.6);
+		transition:all 1s;
+		animation:loading 1s ease-in-out infinite;
+		animation-direction:alternate;
+		-webkit-animation:loading 1s ease-in-out infinite;
+		-webkit-animation-direction:alternate;
+	}
+	@keyframes loading {
+		0% {
+		box-shadow:-25px -25px 1px rgba(40,200,255,0.6),-35px 0px 1px rgba(255,120,100,0.6),-25px 25px 1px rgba(255,80,150,0.6),0px 35px 1px rgba(150,80,139,0.6),25px 25px 1px rgba(156,110,245,0.6),25px -25px 1px rgba(93,124,228,0.6),0px -35px 1px rgba(112,130,255,0.6),35px 0px 1px rgba(141,109,200,0.6);
+		transform:rotate(0deg);
+	}
+	50% {
+		box-shadow:-5px -5px 1px rgba(40,200,255,0.6),-7px 0px 1px rgba(255,120,100,0.6),-5px 5px 1px rgba(255,80,150,0.6),0px 7px 1px rgba(150,80,139,0.6),5px 5px 1px rgba(156,110,245,0.6),5px -5px 1px rgba(93,124,228,0.6),0px -7px 1px rgba(112,130,255,0.6),7px 0px 1px rgba(141,109,200,0.6);
+		transform:rotate(360deg);
+	}
+	100% {
+		box-shadow:-100px -100px 1px rgba(40,200,255,0.6),-140px 0px 1px rgba(255,120,100,0.6),-100px 100px 1px rgba(255,80,150,0.6),0px 140px 1px rgba(150,80,139,0.6),100px 100px 1px rgba(156,110,245,0.6),100px -100px 1px rgba(93,124,228,0.6),0px -140px 1px rgba(112,130,255,0.6),140px 0px 1px rgba(141,109,200,0.6);
+		background-color:darkgray;
+		transform:rotate(360deg);
+	}
+	@-webkit-keyframes loading {
+			0% {
+			box-shadow:-25px -25px 1px rgba(40,200,255,0.6),-35px 0px 1px rgba(255,120,100,0.6),-25px 25px 1px rgba(255,80,150,0.6),0px 35px 1px rgba(150,80,139,0.6),25px 25px 1px rgba(156,110,245,0.6),25px -25px 1px rgba(93,124,228,0.6),0px -35px 1px rgba(112,130,255,0.6),35px 0px 1px rgba(141,109,200,0.6);
+			transform:rotate(0deg);
+		}
+		50% {
+			box-shadow:-5px -5px 1px rgba(40,200,255,0.6),-7px 0px 1px rgba(255,120,100,0.6),-5px 5px 1px rgba(255,80,150,0.6),0px 7px 1px rgba(150,80,139,0.6),5px 5px 1px rgba(156,110,245,0.6),5px -5px 1px rgba(93,124,228,0.6),0px -7px 1px rgba(112,130,255,0.6),7px 0px 1px rgba(141,109,200,0.6);
+			transform:rotate(360deg);
+		}
+		100% {
+			box-shadow:-100px -100px 1px rgba(40,200,255,0.6),-140px 0px 1px rgba(255,120,100,0.6),-100px 100px 1px rgba(255,80,150,0.6),0px 140px 1px rgba(150,80,139,0.6),100px 100px 1px rgba(156,110,245,0.6),100px -100px 1px rgba(93,124,228,0.6),0px -140px 1px rgba(112,130,255,0.6),140px 0px 1px rgba(141,109,200,0.6);
+			background-color:darkgray;
+			transform:rotate(360deg);
+		}
+	}
+</style>
+</head>
+<body>
+<div id="loading">
+    加载中
+</div>
+
+<script>
+	function GetQueryString(name) {
+	       var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+	       var r = window.location.search.substr(1).match(reg);
+	       if (r!=null)
+	            return (r[2]);
+	            return null;
+	}
+  	var uid= GetQueryString('uid');
+		if(uid==1000){
+			setTimeout(function(){
+				window.location.href="../demo/index.html";	
+			},3000);
+		}else if(uid==2000){
+			setTimeout(function(){
+				window.location.href="../demo/book.html";	
+			},3000);
+		}else if(uid==3000){
+			setTimeout(function(){
+				window.location.href="../demo/mine.html";	
+			},3000);
+		}else{
+			setTimeout(function(){
+				window.location.href="../demo/index.html";	
+			},3000);
+		}
+</script>
+
+</body>
+</html>
