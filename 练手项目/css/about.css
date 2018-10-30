@@ -1,0 +1,85 @@
+body{
+	margin:0;
+	padding:0;
+}
+p{
+	margin:0;
+	padding:0;
+}
+.box{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column wrap;
+	width: 100%;
+	height: 1465px;
+	background: #F3F3F3;
+}
+.box .bigbox{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column wrap;
+	width: 60%;
+	height: 90%;
+}
+.box .bigbox .kbox{
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: column wrap;
+	width: 25%;
+	height: 100%;
+}
+.box .bigbox .kbox .time{
+    font-size: 20px;
+    font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+    font-weight: 300;
+    color: rgb(51, 51, 51);
+}
+
+.box .bigbox .kbox .title{
+	font-size: 24px;
+    font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+}
+.box .bigbox .kbox .font{
+	font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin-top: 39px;
+}
+.box .bigbox .kbox .different .stronger{
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+}
+.box .bigbox .kbox .different .next{
+    font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+#last{
+	margin-bottom: 50%;
+	height: 56%;
+}
+#last1{
+	margin-bottom: 18%;
+	height: 85%;
+}
+@media screen and (max-width: 995px){
+	.box{
+		height:auto;
+		width:100%;
+		background: #F7F7F7;
+	}
+	.box .bigbox{
+		width:100%;
+	}
+	.box .bigbox .kbox{
+		width:100%;
+	}
+}

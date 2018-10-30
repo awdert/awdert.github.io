@@ -1,0 +1,56 @@
+.row img{
+	width: 100%;
+	height: 100%;
+}
+.row{
+	position: relative;
+}
+.row .maker1{
+	position: absolute;
+	top: 23%;
+	right: 10%;
+	color: #444444;
+}
+.row .maker2{
+	position: absolute;
+	top: 7%;
+	left: 24%;
+	color: #fff;
+
+}
+.row .maker3{
+	position: absolute;
+	top: 23%;
+	right: 10%;
+	color: #444444;
+}
+.row .maker4{
+	position: absolute;
+	top: 7%;
+	left: 21%;
+	color: #fff;
+}
+.row .position{
+	width: 29%;
+	height: 33%;
+}
+.row .position h2{
+	font-size: 48px;
+    font-family: "Microsoft YaHei", 黑体, 宋体;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 995px){
+	.pfont,.bfont,.row .position p{
+		display: none;
+	}
+	.row .position {
+		width:47%;
+		height:33%;
+		top: -12%;
+		right: 30%;
+	}
+	.row .position h2{
+		font-size: 24px;
+	}
+}

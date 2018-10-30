@@ -1,0 +1,72 @@
+.pic1,.pic2,.pic3,.pic4,.pic5{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-flow:row wrap;
+}
+.pic1 img{
+	margin-top:107px;
+}
+.pic2 img{
+	margin-top:150px;
+}
+.pic3 img{
+	margin-top:177px;
+}
+.pic4 img{
+	margin-top:116px;
+}
+.pic5 img{
+	margin-top:95px;
+}
+.pic1{
+	height:540px;
+	background: #F7FBFF;
+}
+.pic2{
+	height:580px;
+	background: #FFFFFF;
+}
+.pic3{
+	height:605px;
+	background: #F7FBFF;
+}
+.pic4{
+	height:550px;
+	background: #FFFFFF;
+}
+.pic5{
+	height:529px;
+	background: #F7FBFF;
+}
+.row .font{
+	display:inline-flex;
+	justify-content: flex-start;
+	align-items:center;
+	flex-flow:row wrap;
+	width:480px;
+	height:200px;
+}
+.row .font .title{
+	width:120px;
+	height:34px;
+	font-size: 24px;
+    font-family: 'Microsoft YaHei',微软雅黑, sans-serif;
+    font-weight: 100;
+    color: #333333;
+}
+.row .font .content{
+	font-family: 'Microsoft YaHei',微软雅黑, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+    text-align: left;
+}
+@media screen and (max-width: 995px){
+	.pic1,.pic2,.pic3,.pic4,.pic5,.row .font,.row .font .title{
+		height:auto;
+	}
+	.pfont,.bfont{
+		display: none;
+	}
+}

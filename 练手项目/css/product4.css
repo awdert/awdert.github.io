@@ -1,0 +1,67 @@
+.pic1,.pic2,.pic3,.pic4{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.pic1{
+	height:384px;
+	background: #F7FBFF;
+}
+.pic2{
+	height:386px;
+	background: #FFFFFF;
+}
+.pic3{
+	height:358px;
+	background: #F7FBFF;
+}
+.pic4{
+	height:360px;
+	background: #FFFFFF;
+}
+.pic1 img,.pic2 img,.pic3 img,.pic4 img{
+	width:19%;
+	height:77%;
+	margin-top:80px;
+}
+.row .font{
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 480px;
+	height: 200px;
+}
+.row .font .title{
+	width: 120px;
+	height: 34px;
+	font-size: 24px;
+    font-family: 'Microsoft YaHei',微软雅黑, sans-serif;
+    font-weight: 100;
+    color: #333333;
+}
+.row .font .content{
+	font-family: 'Microsoft YaHei',微软雅黑, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+    text-align: left;
+}
+.pfont span{
+	font-family: 黑体, "Microsoft YaHei", 微软雅黑, sans-serif;
+    font-size: 53px;
+    font-weight: 100;
+    vertical-align: middle;
+	color: #FFF;
+	margin-left: 10px;
+}
+@media screen and (max-width: 995px){
+	.pic1,.pic2,.pic3,.pic4,.pic1 img,.pic2 img,.pic3 img,.pic4 img,.row .font,.row .font .title{
+		height:auto;
+		margin-top: 0;
+	}
+	.pfont,.bfont{
+		display: none;
+	}
+}

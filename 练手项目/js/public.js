@@ -1,0 +1,49 @@
+$('.header-table1>li').eq(0).click(function(){
+	window.location.href="./index.html"
+});
+$('.header-table1>li').eq(2).click(function(){
+	window.location.href="./support.html"
+});
+$('.header-table1>li').eq(3).click(function(){
+	window.location.href="./about.html"
+});
+$('.standard>li').eq(0).click(function(){
+	window.location.href="./product1.html"
+});
+$('.standard>li').eq(1).click(function(){
+	window.location.href="./product2.html"
+});
+$('.standard>li').eq(2).click(function(){
+	window.location.href="./product3.html"
+});
+$('.standard>li').eq(3).click(function(){
+	window.location.href="./product4.html"
+});
+$('.standard>li').hide();
+$('.header-table1>li').eq(1).hover(
+	function(){
+		$('.standard>li').show();
+		$('.standard').css({
+			'height':'237px',
+			'transition':'2s'
+	});
+	},
+	function(){
+		$('.standard').css({
+			'height':'0',
+			'transition':'2s'
+		});
+		$('.standard>li').hide();
+});
+$('.standard').mouseenter(function(){
+	$('.standard').css({
+			'height':'237px'
+	});
+	$('.standard>li').show();
+})
+$('.standard').mouseleave(function(){
+	$('.standard').css({
+			'height':'0'
+	});
+	$('.standard>li').hide();
+})
