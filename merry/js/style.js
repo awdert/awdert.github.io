@@ -1,7 +1,7 @@
 var oA=document.documentElement.clientHeight;
 var mySwiper = new Swiper('.swiper-container',{
   on: {
-    touchEnd: function(event){
+    touchMove: function(event){
      		if(mySwiper.getTranslate('y')==-oA) {
 			$('.page-two,.page-one-b').css({
 				'-webkit-animation-play-state':'running',
