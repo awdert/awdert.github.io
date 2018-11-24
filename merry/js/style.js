@@ -1,7 +1,7 @@
 var oA=document.documentElement.clientHeight;
 var mySwiper = new Swiper('.swiper-container',{
   on: {
-    touchEnd: function(){
+     slideChangeTransitionEnd: function(){
     	if(mySwiper.getTranslate('y')==0) {
     		$(".bb,.cc,.dd,.ee,.ff,.gg,.hh").hide();
 			$(".bb,.cc,.dd,.ee,.ff,.gg,.hh").removeClass("animated fadeIn");
