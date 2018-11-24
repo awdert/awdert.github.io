@@ -1,7 +1,7 @@
 var oA=document.documentElement.clientHeight;
 var mySwiper = new Swiper('.swiper-container',{
   on: {
-    touchEnd: function(event){
+    slideChangeTransitionEnd: function(event){
     	if(mySwiper.getTranslate('y')==0) {
     		$(".aa").show();
     		$(".bb,.cc,.dd,.ee,.ff,.gg,.hh").hide();
